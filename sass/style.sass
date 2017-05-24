@@ -1,0 +1,120 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
+
+@import ../bower_components/font-awesome/scss/font-awesome
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
+
+/*css da pagina*/
+
+
+/*Minhas Variaveis*/
+$menuLink: #fff
+$white: #fff
+$black: #000
+
+/*Gerais*/
+body 
+    font-family: 'Open Sans', sans-serif
+section, 
+header,
+footer
+    min-height: 100vh
+    
+#home
+    background-color: #fff000
+    background: url("../img/home.jpeg") center center no-repeat fixed
+    background-size: cover
+#sessao1,
+#form1
+    background-color: #f0f0f0 
+#sessao2,
+#form2
+    background-color: #000000
+#trailer 
+    background-color: #1d1d1d
+/*Botões*/
+.botaoAzul,
+.botaoVerde,
+.botaoAzulClaro,
+.botaoVermelho    
+    @extend .btn    
+.botaoAzul
+    @extend .btn-primary
+.botaoVerde
+    @extend .btn-success   
+.botaoAzulClaro
+    @extend .btn-info 
+.botaoVermelho
+    @extend .btn-danger
+           
+/*Menu*/
+
+.menu
+    position: fixed
+    background-color: rgba(0,0,0,0.7)
+    width: 100%
+    text-align: center
+    ul 
+        margin: auto
+        li 
+            width: 150px
+            height: 40px
+            line-height: 2
+            display: inline-block
+            a 
+                font-size: 1.3em
+                color: $menuLink
+                text-decoration: none
+                cursor: pointer
+
+/*config sections*/ 
+.home, 
+.sessao1,
+.sessao2,
+.form1,
+.form2,
+.trailer,
+.sessoes
+    @extend .container
+    div
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100vh
+        flex-direction: column 
+        color: $white 
+        h1            
+            box-shadow: 0px 0px 5px rbga(255,255,225,0.7)
+            font-size: 4em
+        h2
+            font-size: 3em
+            padding: 15px         
+        a 
+            margin: 10px       
+.sessao1,
+.form1,
+.sessoes
+    div 
+        color: $black  
+.sessoes
+    border-top: rgba($black, 0.6) 2px solid
+    htight: 400px
+
+
+/*Config Formularios*/
+.formulario
+    text-align: center
+    padding: 50px
+    border: rgba($black, 0.5) 2px solid
+    border-radius: 20px
+    div
+        height: 50px
+        @extend .form-group
+        input
+            @extend .form-control  
+.black
+    border: rgba($white, 0.5) 2px solid                   
+
+
+

@@ -1,0 +1,19 @@
+{
+    "name": "uolet",
+    "version": "1.0.0",
+    "description": "teste de tagManager",
+    "main": "index.js",
+    "dependencies": {
+        "gulp": "^3.9.1"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-sass": "^2.3.2",
+        "gulp-watch": "^4.3.10"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Vinicius da Silva Fleury - worldvini@hotmail.com",
+    "license": "ISC"
+}
